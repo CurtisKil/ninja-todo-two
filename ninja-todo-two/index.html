@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=`, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
@@ -14,7 +21,60 @@
     <title>Ninja ToDo Two</title>
   </head>
   <body>
-    <script src="https://use.fontawesome.com/a4f1c42c3d.js"></script>
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form class="search">
+          <input
+            class="form-control m-auto"
+            type="text"
+            name="search"
+            placeholder="search todos"
+          />
+        </form>
+      </header>
+
+      <ul class="list-group todos mx-auto text-light">
+        <li
+          class="
+            list-group-item
+            d-flex
+            justify-content-between
+            align-items-center
+          "
+        >
+          <span>Finish JS The Weird Parts</span>
+          <i class="fas fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="
+            list-group-item
+            d-flex
+            justify-content-between
+            align-items-center
+          "
+        >
+          <span>Gym</span>
+          <i class="fas fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="
+            list-group-item
+            d-flex
+            justify-content-between
+            align-items-center
+          "
+        >
+          <span>Play Smash Bros</span>
+          <i class="fas fa-trash-alt delete"></i>
+        </li>
+      </ul>
+
+      <form class="add text-center my-4">
+        <label class="text-light">Add a new todo...</label>
+        <input class="form-control m-auto" type="text" name="add" />
+      </form>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
