@@ -37,7 +37,7 @@ list.addEventListener("click", (e) => {
 // Filter todos
 const filterTodos = (term) => {
   Array.from(list.children)
-    .filter((todo) => !todo.textContent.includes(term))
+    .filter((todo) => !todo.textContent.toLowerCase().includes(term))
     .forEach((todo) => todo.classList.add("filtered"));
 
   Array.from(list.children)
@@ -45,7 +45,7 @@ const filterTodos = (term) => {
     .forEach((todo) => todo.classList.remove("filtered"));
 };
 
-// Keyup Event
+// Filter todos keyup Event
 search.addEventListener("keyup", () => {
   const term = search.value.trim();
   filterTodos(term);

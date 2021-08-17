@@ -22,6 +22,6 @@ input[type="text"]:focus {
   cursor: pointer;
 }
 
-li.filtered {
+.filtered {
   display: none !important;
 }
